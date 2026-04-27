@@ -1,0 +1,65 @@
+# {{PROJECT_NAME}} MASTER
+
+> **Permanent knowledge** for this project. Stable, lean, pruned aggressively.
+> **For fresh delta and open questions:** read the "Resume highlights" block at the top of the newest `NN-*.md`.
+> **For full history:** browse the session logs (01, 02, 03, ...).
+
+## Resume protocol
+
+1. Read this MASTER.md first (permanent rules)
+2. Read "Resume highlights" at the top of the newest `NN-*.md` (fresh delta + open questions + trust-but-verify)
+3. If delta is unclear or MASTER.md is missing something: read the full newest log
+4. For workspace-wide identity: read `{{IDENTITY_FILE}}`
+
+## Foundation (locked)
+
+> Replace with this project's locked stack/tools/integrations.
+> Example: "Database: Postgres on Neon. Hosting: Vercel. Auth: Clerk. Notion CRM is canonical for leads."
+
+## Phase plan
+
+| Phase | What | Status |
+|---|---|---|
+| 1 | {first phase} | not started / in progress / shipped |
+| 2 | {next phase} | deferred / blocked / planned |
+
+## File / folder convention (locked)
+
+> Replace with this project's file conventions.
+> Example: "All migrations in `migrations/`. Schemas live next to their owning module."
+
+## Locked decisions (don't relitigate)
+
+> The decisions you've already made and don't want to revisit. One line each.
+> Examples:
+> - Tech: chose X over Y because of {reason}
+> - Process: PR review required for {scope}
+> - Naming: snake_case for DB columns, camelCase for API responses
+
+## Anti-patterns (don't repeat)
+
+> What didn't work, what hurt, what to avoid next time. One line each.
+> Append-only. Check if a new entry generalizes an existing one before adding.
+
+## Permanent learnings
+
+> Patterns that work. Reuse them.
+> Append-only. Check whether a new entry generalizes an existing one before adding.
+
+## Resolved open questions (closed, don't relitigate)
+
+| Question | Resolution |
+|---|---|
+| {first answered question} | {how it was resolved} |
+
+## Key files + paths
+
+> The handful of files this project depends on. Update when paths change.
+> - `path/to/main/entry.ts` (entry point)
+> - `path/to/config.json` (configuration)
+
+## Session log
+
+> Pointer-only. One line per session. Don't dump details here. Those live in the NN-log.
+
+- {date}, Session 01: {short title}. (`01-{slug}.md`)

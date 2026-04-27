@@ -1,0 +1,38 @@
+# Priority for Week of {{YYYY-MM-DD}}
+
+> Mutable weekly board. Auto-loaded into Claude via `@{{WORKING_MEMORY_FILE}}` from `{{IDENTITY_FILE}}`.
+> Pruned every week. After every closed item or major status change.
+
+## North Star
+
+> What you're optimizing for over the long horizon. One line. Replace this.
+
+## This Week's Bet
+
+> The one thing this week is about. If you finish this, the week was a win.
+> Replace with the actual bet.
+
+## Hot items: next action
+
+> The 3-5 things that matter most right now. Each one has a concrete next action and an owner.
+>
+> - **{Item 1}**: {what's the move this week}. Owner: {you / agent / shared}.
+> - **{Item 2}**: {...}.
+
+## Loops running this week
+
+> Recurring work that's already in motion. Status, not next-action.
+>
+> - **{Loop name}**: {brief status}.
+
+## Decisions locked (one-liner each)
+
+> Decisions made that don't get relitigated this week.
+>
+> - {Decision}: {one-line reason}.
+
+## Anti-pattern reminders
+
+> Behaviors you're trying to avoid this week. Specific, not generic.
+>
+> - {Don't X, because of {reason}}.

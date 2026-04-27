@@ -1,0 +1,92 @@
+# {{WORKSPACE_NAME}}
+
+## Boot context (always loaded)
+
+@{{WORKING_MEMORY_FILE}}
+
+`{{WORKING_MEMORY_FILE}}` is the mutable weekly board: this week's priorities, hot items, next actions. Pruned regularly.
+
+`{{CRITICAL_CONTEXT_FILE}}` (or per-project MASTER.md files inside `{{SESSIONS_DIR}}/`) holds locked decisions and architecture. Decisions there don't get relitigated.
+
+This file (CLAUDE.md) is the stable playbook: who I am, what I work on, how I like to operate.
+
+When you boot a new session, the workflow is:
+1. Read this file (CLAUDE.md) for identity
+2. Read `{{WORKING_MEMORY_FILE}}` for what's hot this week
+3. Run `/resume` if continuing a project, or start fresh
+
+---
+
+## Who I am
+
+> **{{REPLACE_THIS}}:** write 2-4 sentences about yourself. Role, focus, location. The agent uses this to tailor advice. Example: "Founder of {company}. Building {thing}. Based in {city}. Currently focused on {priority}."
+
+---
+
+## What I work on
+
+> **{{REPLACE_THIS}}:** list your active projects, clients, or focus areas. Example:
+> - **Project A:** what it is, current phase
+> - **Client B:** what we're doing for them
+> - **Internal ops:** your own infrastructure, tools, hub
+
+---
+
+## Domain folders
+
+This workspace uses these folders (the agent should know they exist):
+
+{{DOMAIN_FOLDERS_LIST}}
+
+---
+
+## How I like to work
+
+> **{{REPLACE_THIS}}:** voice, style, tone preferences. Things to avoid. Tools you prefer. The agent reads this and adapts.
+> Examples:
+> - Norwegian bokmål, informal but professional
+> - No em dashes (looks AI-generated)
+> - Short paragraphs, often single sentences
+> - Active voice, no consultant-speak
+> - Don't summarize what you just did. I can read the diff
+
+---
+
+## Memory system
+
+This workspace uses a 4-layer memory architecture managed by `save-context-kit`:
+
+| Layer | File | Role | Volatility |
+|---|---|---|---|
+| **Identity** | `CLAUDE.md` (this file) | Who I am, how I work | Stable, rare edits |
+| **Critical context** | `{{CRITICAL_CONTEXT_FILE}}` (per project, in `{{SESSIONS_DIR}}/{project}/`) | Locked decisions, architecture, learnings | Edits per planning session |
+| **Working memory** | `{{WORKING_MEMORY_FILE}}` | This week's priorities, hot items | Weekly |
+| **Episodic** | `{{SESSIONS_DIR}}/{project}/NN-*.md` | Session changelog (what happened, when) | Append-only |
+
+Use:
+- `/save-context` to save the current session. Writes a session log with a Resume highlights block at the top.
+- `/resume` to pick up. Reads MASTER.md + Resume highlights, then verifies state against reality before reporting.
+
+See [PHILOSOPHY.md](./PHILOSOPHY.md) (in the save-context-kit repo) for the why behind this architecture.
+
+---
+
+## Session folder convention
+
+```
+{{SESSIONS_DIR}}/
+├── {topic}.md                  # single-session topics (flat)
+└── {project}/
+    ├── MASTER.md               # always-loaded compressed permanent knowledge
+    ├── 01-{slug}.md            # chronological session logs (changelog)
+    ├── 02-{slug}.md
+    └── ...
+```
+
+Iron rule: session-state lives ONLY in `{{SESSIONS_DIR}}/`. Never in domain folders. Working files (transcripts, code, assets) stay in their project folder. Session-state does not.
+
+---
+
+## Notes
+
+> **{{REPLACE_THIS_OR_DELETE}}:** anything else the agent should know about your workspace, your tools, your APIs, your team. Add freely. Trim aggressively when it stops being true.
