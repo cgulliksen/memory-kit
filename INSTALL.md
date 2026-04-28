@@ -1,10 +1,10 @@
-# INSTALL.md (save-context-kit)
+# INSTALL.md (memory-kit)
 
 > **For Claude Code agents installing this kit on behalf of a user.**
 >
 > If you (the agent) are reading this, it means the user just dropped this repo into their workspace and asked you to install it. Follow this prompt step by step. Don't skip questions, don't make assumptions, don't dump files until the user has answered the onboarding flow.
 >
-> If you (the human) are reading this, you don't need to. Just open Claude Code in your workspace and say: **"Read INSTALL.md and install save-context-kit for me."**
+> If you (the human) are reading this, you don't need to. Just open Claude Code in your workspace and say: **"Read INSTALL.md and install memory-kit for me."**
 
 ---
 
@@ -198,7 +198,7 @@ Same pattern. Ask if exists, seed if not.
 Show the user the result:
 
 ```
-Installed save-context-kit at {root}
+Installed memory-kit at {root}
 
 Files written:
   ✓ .claude/skills/save-context/SKILL.md
@@ -232,7 +232,7 @@ If the workspace is a git repo and `existing.is_git == true`, ask:
 If yes, stage the new files and commit with message:
 
 ```
-Install save-context-kit
+Install memory-kit
 
 - /save-context and /resume skills
 - 4-layer memory system (Identity, Critical Context, Working Memory, Episodic)

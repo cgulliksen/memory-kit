@@ -1,4 +1,4 @@
-# PHILOSOPHY.md (save-context-kit)
+# PHILOSOPHY.md (memory-kit)
 
 > Why this kit exists, and why it's shaped the way it is.
 

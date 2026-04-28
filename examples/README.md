@@ -1,6 +1,6 @@
 # Examples
 
-A live example workspace using save-context-kit will live here once we have one cleaned for sharing.
+A live example workspace using memory-kit will live here once we have one cleaned for sharing.
 
 For now, the kit is dogfooded inside the [Iverksetter Hub](https://iverksetter.no), a private agency operations workspace where it was built. The patterns in `INSTALL.md`, `PHILOSOPHY.md`, and the skill files all came from real cross-session use on that hub.
 

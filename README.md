@@ -1,4 +1,4 @@
-# save-context-kit
+# memory-kit
 
 A memory system for Claude Code that doesn't lie about state.
 
@@ -33,7 +33,7 @@ In any workspace where you want this:
 ```
 1. Clone this repo (or download as zip) into the workspace.
 2. Open Claude Code.
-3. Say: "Read INSTALL.md and install save-context-kit for me."
+3. Say: "Read INSTALL.md and install memory-kit for me."
 ```
 
 Claude reads `INSTALL.md`, detects whether you already have a `CLAUDE.md` or skills directory, asks you 5-6 short questions about how you work, and installs:
@@ -88,7 +88,7 @@ Those are separate concerns. If you want them, build them on top of this layer (
 ## File layout (this repo)
 
 ```
-save-context-kit/
+memory-kit/
 ├── README.md                    # this file
 ├── INSTALL.md                   # the agent's install prompt
 ├── PHILOSOPHY.md                # the why
