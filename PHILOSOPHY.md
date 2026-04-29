@@ -120,13 +120,7 @@ If you want lead pipelines, content extraction, or domain-specific scaffolding: 
 
 ---
 
-## Where this came from
-
-Two practitioners' work shaped the framing.
-
-**Mark Kashef** (ClaudeClaw) articulated the 3-layer memory pattern: identity, critical context, working memory. His implementation goes further (SQLite hive-mind, Gemini extraction, vector embeddings) and his target is the content-creator workflow. We borrowed the layer framing, kept the layers thin, and added an episodic layer specifically for the Claude Code use case.
-
-**Andrej Karpathy's** behavioral principles for skill design (think before coding, simplicity, surgical changes, goal-driven) informed how the SKILL.md files are written. Skills here describe a workflow, not a feature list.
+## Origin
 
 The Resume highlights block + trust-but-verify pattern is original to this kit, hardened across two months of cross-session work on a real agency hub. If you find a sharper version of any of this, the repo accepts PRs.
 

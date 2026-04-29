@@ -106,9 +106,7 @@ memory-kit/
 
 ---
 
-## Credits
-
-The 3-layer memory framing (identity / critical / working) draws on patterns from Mark Kashef's ClaudeClaw memory architecture. The kit is a different shape (narrower scope, no SaaS, no extraction layers), but the layered framing is owed to that work.
+## Origin
 
 The Resume highlights block + trust-but-verify pattern emerged from real cross-session pain on the [Iverksetter](https://iverksetter.no) hub. If your team finds a sharper version, send a PR.
 
